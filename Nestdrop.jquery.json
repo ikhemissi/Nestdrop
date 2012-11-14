@@ -1,6 +1,6 @@
 {
-  "name": "Nestdrop",
-  "title": "Nestdrop",
+  "name": "jquery.nestdrop",
+  "title": "jQuery Nestdrop",
   "description": "A jQuery plugin for getting feedback",
   "version": "0.0.1",
   "homepage": "https://github.com/ikhemissi/Nestdrop",
@@ -24,5 +24,5 @@
   "dependencies": {
     "jquery": "1.8.0"
   },
-  "keywords": [jquery plugin, feedback]
+  "keywords": [jquery plugin, nestdrop, feedback]
 }

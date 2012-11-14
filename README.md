@@ -1,4 +1,6 @@
-# Nestdrop
+# Nestdrop [![Build Status](https://secure.travis-ci.org/ikhemissi/Nestdrop.png?branch=master)][travis]
+
+[travis]: http://travis-ci.org/ikhemissi/Nestdrop
 
 A jQuery plugin for getting feedback
 
