@@ -1,12 +1,8 @@
+/*! jQuery Nestdrop - v0.0.1 - 2012-11-22
+* https://github.com/ikhemissi/Nestdrop
+* Copyright (c) 2012 Iheb KHEMISSI; Licensed MIT */
+
 /*
- * Nestdrop
- * https://github.com/ikhemissi/Nestdrop
- *
- * Copyright (c) 2012 Iheb KHEMISSI
- * Licensed under the MIT license.
- */
- 
- /*
  * Usage : $('body').nestdrop({nest: 'localhost:8080/tickets'});
  */
  
