@@ -8,6 +8,7 @@
     "test": "grunt travis"
   },
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.3.17",
+	"grunt-saucelabs-qunit": ">=1.0.0"
   }
 }

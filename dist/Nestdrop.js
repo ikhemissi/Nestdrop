@@ -1,4 +1,4 @@
-/*! jQuery Nestdrop - v0.0.1 - 2012-11-22
+/*! jQuery Nestdrop - v0.0.1 - 2012-12-05
 * https://github.com/ikhemissi/Nestdrop
 * Copyright (c) 2012 Iheb KHEMISSI; Licensed MIT */
 

@@ -2,6 +2,10 @@
 module.exports = function(grunt) {
 
   // Project configuration.
+  var saucelabskey = null;
+	if (typeof process.env.saucelabskey !== "undefined") {
+		saucelabskey = process.env.saucelabskey;
+	}
   grunt.initConfig({
     pkg: '<json:Nestdrop.jquery.json>',
     meta: {
@@ -33,6 +37,21 @@ module.exports = function(grunt) {
       files: '<config:lint.files>',
       tasks: 'lint qunit'
     },
+    'saucelabs-qunit': {
+      all: {
+        username: 'ikhemissi',
+        key: saucelabskey,
+        tags: ['master'],
+        urls: ['http://127.0.0.1:9999/test/index.html'],
+        browsers: [{
+          browserName: 'safari',
+          platform: 'Windows 2008',
+          version: '5'
+          }, {
+          browserName: 'opera'
+        }]
+      }
+    },
     jshint: {
       options: {
         curly: true,
@@ -49,16 +68,23 @@ module.exports = function(grunt) {
       },
       globals: {
         jQuery: true,
-		html2canvas: true
+		html2canvas: true,
+		process: true
       }
     },
     uglify: {}
   });
 
+  // Loading Saucelabs task
+  grunt.loadNpmTasks('grunt-saucelabs-qunit');
+  
   // Default task.
   grunt.registerTask('default', 'lint qunit concat min');
 
   // Travis CI task.
-  grunt.registerTask('travis', 'lint qunit concat min');
+  //grunt.registerTask('travis', 'lint qunit concat min');
+  
+  // Travis CI task + Saucelabs
+  grunt.registerTask('travis', 'lint server qunit saucelabs-qunit concat min');
 
 };

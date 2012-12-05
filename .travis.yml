@@ -3,3 +3,6 @@ node_js:
   - 0.6
   - 0.8
   - 0.9
+env:
+  global:
+    - secure: sYEc3JrTuKu1Fwz4nNfsjiC3M1xbxdJ5frdlpe11ppEoSeUxjwPGMrlnV9CR\n4Eps/II9nlbegJuqzutSQd+Lgf+9ZqPQcQheK2EPFZQvDQsh+oVrN2YKn70D\nRRa8f5GLOjNPo1wLOQZRBeNtNSawrBCZG0ShEc1NR848ZVryCok=
